@@ -2,7 +2,7 @@ This repository is for our ENSE374 class project.
 
 Vlog 1 Link: https://youtu.be/t_F-pJ7tvPw
 
-CheckPoint 2 
+<ins>CheckPoint 2</ins> 
 
 Project Roles and Responsibilities- [Project Roles and Responsibilities.docx](https://github.com/TeamQ-ENSE374/TeamQ/files/7349375/Project.Roles.and.Responsibilities.docx)<br>
 
