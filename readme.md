@@ -1,6 +1,7 @@
 This repository is for our ENSE374 class project.
 
 Vlog Week 1 Link: https://youtu.be/t_F-pJ7tvPw
+
 Vlog Week 2 Link: https://www.youtube.com/watch?v=UE36pRxfqM4
 
 <h1><ins>CheckPoint 2</ins></h1>
