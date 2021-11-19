@@ -8,6 +8,6 @@ router.get('/auth', (req, res) => {
 })
 router.post('/login', authController.login)
 router.post('/signup', authController.signup)
-router.post('/logout', authController.logout)
+router.get('/logout', authController.logout)
 
 module.exports = router 

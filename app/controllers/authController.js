@@ -22,7 +22,7 @@ const login = (req, res) => {
 }
 
 const logout = (req, res) => {
-    console.log("authController: User " + req.body.username + " is logging out")
+    console.log("authController: User " + req.session.uname + " is logging out")
 
     //According to passport, .logout() never fails, so we only have a success path
     const successPath = '/auth'
