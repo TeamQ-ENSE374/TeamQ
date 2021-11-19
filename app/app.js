@@ -16,9 +16,7 @@ const authRoutes = require('./routes/authRoutes')
 const altRoutes = require('./routes/altRoutes')
 const mainRoutes = require('./routes/mainRoutes')
 // ===============================================================================>
-app.get('/login', (req, res) => {
-    res.sendFile( "authTemp.html", {root: '../app/views'})
-})
+
 app.use(authRoutes)
 app.use(mainRoutes)
 app.use(altRoutes)
