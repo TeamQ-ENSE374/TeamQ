@@ -12,15 +12,6 @@ require('./config/app')(app, express, session, passport)
 require('./config/mongoose')(mongoose)
 require('./config/passport')(passport)
 
-const authRoutes = require('./routes/authRoutes')
-const altRoutes = require('./routes/altRoutes')
-const mainRoutes = require('./routes/mainRoutes')
-// ===============================================================================>
+require('./config/routes')(app)
 
-app.use(authRoutes)
-app.use(mainRoutes)
-app.use(altRoutes)
-
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`)
-})
+require('./config/listen')(app, port)
