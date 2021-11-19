@@ -1,6 +1,3 @@
-const mongoose = require('mongoose')
-const passport = require('passport')
-const passportLocalMongoose = require("passport-local-mongoose")
 const authService = require('../services/authService')
 
 const signup = (req, res) => {
@@ -25,9 +22,9 @@ const logout = (req, res) => {
     console.log("authController: User " + req.session.uname + " is logging out")
 
     //According to passport, .logout() never fails, so we only have a success path
-    const successPath = '/auth'
+    const path = '/auth'
 
-    authService.logout(req, res, successPath)
+    authService.logout(req, res, path)
 }
 
 module.exports = {

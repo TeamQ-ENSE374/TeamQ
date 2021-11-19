@@ -14,7 +14,8 @@ const signup = (req, res, successPath, errorPath) => {
             username: req.body.username
         }, req.body.password, (err, user) => {
             if (err) {
-                throw err
+                throw err //FIX MEEEEEE
+                          //Redirect to login
             } else {
                 req.session.uname = req.body.username
                 passport.authenticate("local")(req, res, () => {
