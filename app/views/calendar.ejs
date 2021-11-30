@@ -11,13 +11,15 @@
 <body>
     <div class="wrapper">
         <main>
+            <% months.forEach(month => { %>
             <div class="toolbar">
                 <div class="toggle">
                     <div class="toggle__option">week</div>
                     <div class="toggle__option toggle__option--selected">month</div>
                 </div>
-                <div class="current-month">June 2016</div>
+                <div class="current-month"><%=month.monthName %>, <%=month.monthYear %></div>
             </div>
+
             <div class="calendar">
                 <div class="calendar__header">
                     <div>mon</div>
@@ -28,52 +30,42 @@
                     <div>sat</div>
                     <div>sun</div>
                 </div>
+                <% 
+                    var count = 1;
+                       var startCount = 1;
+                       var weeklyCount = 1;
+                       var isWeekDone = true;
+                       for(var i=1;i<=month.endOfMonthDate + (month.startDayOfWeek - 1);i++){
+                           if(isWeekDone == true){ %>
                 <div class="calendar__week">
-                    <div class="calendar__day day">1</div>
-                    <div class="calendar__day day">2</div>
-                    <div class="calendar__day day">3</div>
-                    <div class="calendar__day day">4</div>
-                    <div class="calendar__day day">5</div>
-                    <div class="calendar__day day">6</div>
-                    <div class="calendar__day day">7</div>
+
+                    <% isWeekDone = false;}
+                           if(startCount != month.startDayOfWeek){ %>
+                    <div class="calendar__day day"></div>
+                    <%
+                               startCount++;
+                           }
+                           else{
+                           %>
+                    <div class="calendar__day day"><%= count %></div>
+                    <% count++}
+                    if(i % 7 == 0){ %>
                 </div>
-                <div class="calendar__week">
-                    <div class="calendar__day day">8</div>
-                    <div class="calendar__day day">9</div>
-                    <div class="calendar__day day">10</div>
-                    <div class="calendar__day day">11</div>
-                    <div class="calendar__day day">12</div>
-                    <div class="calendar__day day">13</div>
-                    <div class="calendar__day day">14</div>
-                </div>
-                <div class="calendar__week">
-                    <div class="calendar__day day">15</div>
-                    <div class="calendar__day day">16</div>
-                    <div class="calendar__day day">17</div>
-                    <div class="calendar__day day">18</div>
-                    <div class="calendar__day day">19</div>
-                    <div class="calendar__day day">20</div>
-                    <div class="calendar__day day">21</div>
-                </div>
-                <div class="calendar__week">
-                    <div class="calendar__day day">22</div>
-                    <div class="calendar__day day">23</div>
-                    <div class="calendar__day day">24</div>
-                    <div class="calendar__day day">25</div>
-                    <div class="calendar__day day">26</div>
-                    <div class="calendar__day day">27</div>
-                    <div class="calendar__day day">28</div>
-                </div>
-                <div class="calendar__week">
-                    <div class="calendar__day day">29</div>
-                    <div class="calendar__day day">30</div>
-                    <div class="calendar__day day">31</div>
-                    <div class="calendar__day day">1</div>
-                    <div class="calendar__day day">2</div>
-                    <div class="calendar__day day">3</div>
-                    <div class="calendar__day day">4</div>
-                </div>
+                <%
+                        isWeekDone = true;
+                    } weeklyCount++; 
+                      weeklyCount = weeklyCount % 7}
+                    if(weeklyCount < 7){
+                        while(weeklyCount <= 7){ %>
+                <div class="calendar__day day"></div>
+                <%
+                            weeklyCount++;
+                        }
+                    }
+                    %>
             </div>
+            <% }); %>
+
         </main>
         <sidebar>
             <div class="logo">Q-Corr</div>

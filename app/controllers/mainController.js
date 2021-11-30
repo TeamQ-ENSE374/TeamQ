@@ -1,4 +1,5 @@
 const eventService = require('../services/eventService');
+const monthService = require('../services/monthService');
 
 const main = async (req, res) => {
 
@@ -13,15 +14,27 @@ const main = async (req, res) => {
         //      and ask the user to reload the page
         try {
             const events = await eventService.fetchEvents(req.session.uname)
+
+            /* The following addMonth service calls are for one time use
+            comment them out once the database is created and there is 2 month data 
+            pre-fetched in it
+            */
+
+            // await monthService.addMonth(122021, 3, 31, "December", 2021);
+            // await monthService.addMonth(12022, 6, 31, "January", 2022);
+
+            const month = await monthService.fetchAll();
             res.render(successPath, {
                 username: req.session.uname,
-                events: events
+                events: events,
+                months: month,
             })
         } catch (err) {
             console.log('mainController-error: ' + err)
             res.render(successPath, {
                 username: req.session.uname,
-                events: events
+                events: events,
+                months: month
             })
         }
     } else {
