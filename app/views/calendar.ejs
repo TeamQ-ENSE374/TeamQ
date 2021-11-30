@@ -47,7 +47,11 @@
                            }
                            else{
                            %>
-                    <div class="calendar__day day"><%= count %></div>
+
+                    <div class="calendar__day day">
+                        <%- include("partials/popUpEventForm.ejs", {dayNumber: count, month: month.monthName}) -%>
+                    </div>
+
                     <% count++}
                     if(i % 7 == 0){ %>
                 </div>

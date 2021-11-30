@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal</title>
+    <link href="css/popupStyle.css" rel="stylesheet">
+    <script defer src="js/popup.js"></script>
+</head>
+
+<body>
+    <button data-modal-target="#modal"><%= dayNumber %></button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Add event for <%= month %>, <%= dayNumber %></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action='/addEvent' method="post">
+                <label>Event name</label>
+                <input id="eventName" type="text" name='eventName'><br>
+                <label>Event details</label>
+                <input id="eventDetails" type="text" name='eventDetails'><br>
+                <label>Date</label>
+                <input id='date' type='text' name='date'>
+                <input type='hidden' value='vGebs'><br>
+                <input type='submit'>
+            </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+
+</html>
