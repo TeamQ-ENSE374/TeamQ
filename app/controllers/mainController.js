@@ -24,6 +24,7 @@ const main = async (req, res) => {
             // await monthService.addMonth(12022, 6, 31, "January", 2022);
 
             const month = await monthService.fetchAll();
+
             res.render(successPath, {
                 username: req.session.uname,
                 events: events,
