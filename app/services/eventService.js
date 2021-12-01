@@ -1,9 +1,18 @@
 const Event = require('../models/event')
 
-const addEvent = async (event) => {
+const addEvent = async (eventName, eventDetails, creatorUname, creationDay, creationMonth, creationYear) => {
     
     try {
-        await event.save()
+        console.log(creationYear);
+        var ev = new Event({
+            eventName: eventName,
+            eventDetails: eventDetails,
+            creatorUname: creatorUname,
+            creationDay : creationDay,
+            creationMonth: creationMonth,
+            creationYear: creationYear
+        });
+        ev.save();
         console.log("eventService: Successfully added a new event")
     } catch (e) {
         console.log("eventService-error: failed to add new event")

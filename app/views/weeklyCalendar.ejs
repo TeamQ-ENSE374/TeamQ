@@ -1,0 +1,42 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: Calendar</title>
+    <link href='css/style.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <%- include('partials/weeklyView.ejs'); -%>
+
+        <sidebar>
+            <div class="logo">Q-Corr</div>
+            <div class="avatar">
+                <div class="avatar__img">
+                    <img src="https://picsum.photos/70" alt="avatar">
+                </div>
+                <div class="avatar__name"><%=username%></div>
+            </div>
+            <nav class="menu">
+                <a class="menu__item menu__item--active" href="#">
+                    <i class="menu__icon fa fa-calendar"></i>
+                    <span class="menu__text">calendar</span>
+                </a>
+                <a class="menu__item" href="#">
+                    <i class="menu__icon fa fa-envelope"></i>
+                    <span class="menu__text">messages</span>
+                </a>
+                <a class="menu__item" href="/logout">
+                    <i class="menu__icon fa fa-envelope"></i>
+                    <span class="menu__text">Log Out</span>
+                </a>
+            </nav>
+        </sidebar>
+    </div>
+</body>
+
+</html>
