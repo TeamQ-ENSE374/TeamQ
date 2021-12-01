@@ -1,6 +1,6 @@
 const Event = require('../models/event')
 
-const addEvent = async (eventName, eventDetails, creatorUname, creationDay, creationMonth, creationYear) => {
+const addEvent = async (eventName, eventDetails, creatorUname, creationDay, creationMonth, creationYear, timeStart, timeEnd) => {
     
     try {
         console.log(creationYear);
@@ -10,7 +10,9 @@ const addEvent = async (eventName, eventDetails, creatorUname, creationDay, crea
             creatorUname: creatorUname,
             creationDay : creationDay,
             creationMonth: creationMonth,
-            creationYear: creationYear
+            creationYear: creationYear,
+            timeStart: timeStart,
+            timeEnd: timeEnd
         });
         ev.save();
         console.log("eventService: Successfully added a new event")

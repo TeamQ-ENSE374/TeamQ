@@ -7,7 +7,9 @@ const eventSchema = new mongoose.Schema({
     creatorUname: String,
     creationDay: Number,
     creationMonth: String,
-    creationYear: Number
+    creationYear: Number,
+    timeStart: String,
+    timeEnd: String
 })
 
 const Event = new mongoose.model("Event", eventSchema);
