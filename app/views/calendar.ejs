@@ -14,8 +14,16 @@
             <% months.forEach(month => { %>
             <div class="toolbar">
                 <div class="toggle">
-                    <div class="toggle__option">week</div>
-                    <div class="toggle__option toggle__option--selected">month</div>
+                    <div class="toggle__option">
+                        <a href='/weekly'>
+                            week
+                        </a>
+                    </div>
+                    <div class="toggle__option toggle__option--selected">
+                        <a href='/'>
+                            month
+                        </a>
+                    </div>
                 </div>
                 <div class="current-month"><%=month.monthName %>, <%=month.monthYear %></div>
             </div>
@@ -49,7 +57,16 @@
                            %>
 
                     <div class="calendar__day day">
-                        <%- include("partials/popUpEventForm.ejs", {dayNumber: count, month: month.monthName}) -%>
+                        <%- include('partials/popUpEventForm.ejs', {dayNumber: count, month: month.monthName, year: month.monthYear}); -%>
+                        <% events.forEach(event => { %>
+                        <div class="calender__event event">
+                            <% if(event.creationMonth == month.monthName && event.creationDay == count && event.creationYear == month.monthYear){ %>
+                            <a href="#">
+                                <button class='dot'></button>
+                            </a>
+                            <% } %>
+                        </div>
+                        <% }); %>
                     </div>
 
                     <% count++}

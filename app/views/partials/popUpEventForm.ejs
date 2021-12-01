@@ -11,20 +11,21 @@
 </head>
 
 <body>
-    <button data-modal-target="#modal"><%= dayNumber %></button>
-    <div class="modal" id="modal">
+    <button data-modal-target="#modal<%=month+dayNumber+year %>"><%= dayNumber %></button>
+    <div class="modal" id="modal<%=month+dayNumber+year %>">
         <div class="modal-header">
-            <div class="title">Add event for <%= month %>, <%= dayNumber %></div>
+            <div class="title">Add event for <%=month %>, <%=dayNumber %> , <%=year %></div>
             <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
             <form action='/addEvent' method="post">
+                <input name="creationDay" type="hidden" value="<%=dayNumber %>" />
+                <input name="creationMonth" type="hidden" value="<%=month %>" />
+                <input name="creationYear" type="hidden" value="<%=year %>" />
                 <label>Event name</label>
                 <input id="eventName" type="text" name='eventName'><br>
                 <label>Event details</label>
                 <input id="eventDetails" type="text" name='eventDetails'><br>
-                <label>Date</label>
-                <input id='date' type='text' name='date'>
                 <input type='hidden' value='vGebs'><br>
                 <input type='submit'>
             </form>
