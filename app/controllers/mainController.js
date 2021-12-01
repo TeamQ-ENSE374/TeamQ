@@ -88,14 +88,16 @@ const addEvent = async (req, res) => {
         eventDetails,
         creationDay,
         creationMonth,
-        creationYear
+        creationYear,
+        timeStart,
+        timeEnd
     } = req.body
 
     //Whether this operation fails or succeeds, we will redirect to '/'
     const path = '/'
 
     try {
-        await eventService.addEvent(eventName, eventDetails, req.session.uname, creationDay, creationMonth, creationYear)
+        await eventService.addEvent(eventName, eventDetails, req.session.uname, creationDay, creationMonth, creationYear, timeStart, timeEnd)
         res.redirect(path)
     } catch (err) {
         console.log('mainController-error: ' + err)
