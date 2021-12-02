@@ -17,7 +17,14 @@
             </a>
             <div class="calendar__title" style="display: flex; justify-content: center; align-items: center">
                 <div class="icon secondary chevron_left">‹</div>
-                <h1 class="" style="flex: 1;"><span></span><strong>18 JAN – 24 JAN</strong> 2016</h1>
+                <h1 class="" style="flex: 1;"><span></span><strong>
+                        <% if(weekStartDay <= 0 ) { %>
+                        1 <%=month%> – <%=weekEndDay%> <%=month%>
+
+                        <% } else { %>
+                        <%=weekStartDay%> <%=month%> – <%=weekEndDay%> <%=month%>
+                        <% } %>
+                    </strong> <%=year%></h1>
                 <div class="icon secondary chevron_left">›</div>
             </div>
             <div style="align-self: flex-start; flex: 0 0 1"></div>
@@ -29,13 +36,57 @@
                 <thead>
                     <tr>
                         <th class="headcol"></th>
-                        <th>Mon, 18</th>
-                        <th>Tue, 19</th>
-                        <th class="today">Wed, 20</th>
-                        <th>Thu, 21</th>
-                        <th>Fri, 22</th>
-                        <th class="secondary">Sat, 23</th>
-                        <th class="secondary">Sun, 24</th>
+                        <% for(var i=weekStartDay; i <= weekEndDay; i++){ 
+                           if(i==weekStartDay){
+                        %>
+                        <% if(i <= 0){ %>
+                        <th>Mon</th>
+                        <% } else { %>
+                        <th>Mon, <%=i%> </th>
+                        <%} %>
+
+                        <% } else if(i==weekStartDay + 1){ %>
+                        <% if(i <= 0){ %>
+                        <th>Tue</th>
+
+                        <%} else { %>
+                        <th>Tue, <%=i%></th>
+                        <%} %>
+
+                        <% } else if(i==weekStartDay + 2){ %>
+                        <% if(i <= 0){ %>
+                        <th>Wed</th>
+                        <%} else { %>
+                        <th class="today">Wed, <%=i%></th>
+                        <%} %>
+
+                        <% } else if(i==weekStartDay + 3){ %>
+                        <% if(i <= 0){ %>
+                        <th>Thu</th>
+                        <%} else { %>
+                        <th>Thu, <%=i%></th>
+                        <%} %>
+
+                        <% } else if(i==weekStartDay + 4){ %>
+                        <% if(i <= 0){ %>
+                        <th>Fri</th>
+                        <%} else { %>
+                        <th>Fri, <%=i%></th>
+                        <%} %>
+
+                        <% } else if(i==weekStartDay + 5){ %>
+
+                        <% if(i <= 0){ %>
+                        <th>Sat</th>
+                        <%} else { %>
+                        <th class="secondary">Sat, <%=i%></th>
+                        <%} %>
+
+                        <% } else if(i==weekStartDay + 6){ %>
+
+                        <th class="secondary">Sun, <%=i%></th>
+
+                        <% } }%>
                     </tr>
                 </thead>
             </table>
@@ -328,4 +379,3 @@
 </body>
 
 </html>
-
