@@ -15,7 +15,7 @@
             <div class="toolbar">
                 <div class="toggle">
                     <div class="toggle__option">
-                        <a href='/weekly'>
+                        <a href='/weekly2'>
                             week
                         </a>
                     </div>
@@ -61,9 +61,12 @@
                         <% events.forEach(event => { %>
                         <div class="calender__event event">
                             <% if(event.creationMonth == month.monthName && event.creationDay == count && event.creationYear == month.monthYear){ %>
-                            <a href="/weekly">
-                                <button class='dot'></button>
-                            </a>
+                            <form action="/event" method="post">
+                                <input type="hidden" value="<%=count%>" name="dayNumber" />
+                                <input type="hidden" value="<%=month.monthName%>" name="month" />
+                                <input type="hidden" value="<%=month.monthYear%>" name="year" />
+                                <button type="submit" class="dot"></button>
+                            </form>
                             <% } %>
                         </div>
                         <% }); %>
@@ -97,7 +100,7 @@
                 <div class="avatar__name"><%=username%></div>
             </div>
             <nav class="menu">
-                <a class="menu__item menu__item--active" href="#">
+                <a class="menu__item menu__item--active" href="/">
                     <i class="menu__icon fa fa-calendar"></i>
                     <span class="menu__text">calendar</span>
                 </a>
