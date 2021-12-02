@@ -22,7 +22,6 @@ Envisioned and Rationalized MVP- [Envisioned and Rationalized MVPs-converted.pdf
 
 <h1><ins>CheckPoint 3</ins></h1>
 
-Activity 3 Diagram Document- [Activity 3 Diagram Document.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7443417/Activity.3.Diagram.Document.pdf) <br>
-
-
+Activity 3 Diagram Document - [Activity 3 Diagram Document UPDATED.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7644374/Activity.3.Diagram.Document.UPDATED.pdf) <br>
+    - This was updated Dec 2, 2021 to reflect changes made during the coding process
 
