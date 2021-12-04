@@ -19,9 +19,11 @@ Project Charter - [Project Charter Team Q UPDATED.pdf](https://github.com/TeamQ-
 
 Stakeholder Register Document - [Stakeholder Register Team Q.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7647440/Stakeholder.Register.Team.Q.pdf) <br>
 
-Project Scope Statement-[Project Scope Statement Team Q.docx.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7349542/Project.Scope.Statement.Team.Q.docx.pdf)<br>
+Project Scope Statement - [Project Scope Statement Team Q UPDATED.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7653430/Project.Scope.Statement.Team.Q.UPDATED.pdf) <br>
+    - This was updated Dec 3, 2021 to reflect changes made during the coding process <br>
 
-Envisioned and Rationalized MVP- [Envisioned and Rationalized MVPs-converted.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7349501/Envisioned.and.Rationalized.MVPs-converted.pdf)<br>
+Envisioned and Rationalized MVP - [Envisioned and Rationalized MVP's UPDATED.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7653432/Envisioned.and.Rationalized.MVP.s.UPDATED.pdf) <br>
+    - This was updated Dec 3, 2021 to reflect changes made during the coding process <br>
 
 <h1><ins>CheckPoint 3</ins></h1>
 
