@@ -38,4 +38,6 @@ Final Presentation Powerpoint - [Q-Cor final project presentation.pptx](https://
 
 Project Installation Instructions - [Starting the Q-Corr app.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7661773/Starting.the.Q-Corr.app.pdf) <br>
 
+Final Report - [Final Report Team Q.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7661895/Final.Report.Team.Q.pdf) <br>
+
 
