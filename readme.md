@@ -6,6 +6,8 @@ Vlog Week 2 Link: https://www.youtube.com/watch?v=UE36pRxfqM4
 
 Vlog Week 3 Link: https://youtu.be/JHZC4p08UzM
 
+Vlog Week 5 Link: https://www.youtube.com/watch?v=XGKFmiCb1U4
+
 <h1><ins>CheckPoint 2</ins></h1>
 
 Project Roles and Responsibilities - [Project Roles and Responsibilities Team Q UPDATED.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7647227/Project.Roles.and.Responsibilities.Team.Q.UPDATED.pdf) <br>
@@ -33,5 +35,7 @@ Activity 3 Diagram Document - [Activity 3 Diagram Document UPDATED.pdf](https://
 <h1><ins>CheckPoint 5</ins></h1>
 
 Final Presentation Powerpoint - [Q-Cor final project presentation.pptx](https://github.com/TeamQ-ENSE374/TeamQ/files/7660839/Q-Cor.final.project.presentation.pptx) <br>
+
+Project Installation Instructions - [Starting the Q-Corr app.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7661773/Starting.the.Q-Corr.app.pdf) <br>
 
 
