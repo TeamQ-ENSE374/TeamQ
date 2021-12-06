@@ -29,5 +29,9 @@ Envisioned and Rationalized MVP - [Envisioned and Rationalized MVP's UPDATED.pdf
 
 Activity 3 Diagram Document - [Activity 3 Diagram Document UPDATED.pdf](https://github.com/TeamQ-ENSE374/TeamQ/files/7644374/Activity.3.Diagram.Document.UPDATED.pdf) <br>
     - This was updated Dec 2, 2021 to reflect changes made during the coding process
+    
+<h1><ins>CheckPoint 5</ins></h1>
+
+Final Presentation Powerpoint - [Q-Cor final project presentation.pptx](https://github.com/TeamQ-ENSE374/TeamQ/files/7660839/Q-Cor.final.project.presentation.pptx) <br>
 
 
